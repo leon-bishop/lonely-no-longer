@@ -175,7 +175,7 @@ export default function PublicChat(){
      <form onSubmit={start} className="mt-6 space-y-5">
        <label className="flex cursor-pointer items-start gap-3"><input type="checkbox" className="mt-1 h-5 w-5 accent-[#185435]" checked={adult} onChange={e=>setAdult(e.target.checked)}/><span><strong>I confirm I am 18 or older.</strong><span className="block text-sm text-[#52675a]">This is self-declaration, not independent age verification.</span></span></label>
        <label className="flex cursor-pointer items-start gap-3"><input type="checkbox" className="mt-1 h-5 w-5 accent-[#185435]" checked={rules} onChange={e=>setRules(e.target.checked)}/><span><strong>I agree to be kind and protect my privacy.</strong><span className="block text-sm text-[#52675a]">No links, contact details, harassment or sexual content. <Link href="/rules" className="underline">Community rules</Link>, <Link href="/privacy" className="underline">privacy</Link> and <Link href="/safety" className="underline">safety advice</Link>.</span></span></label>
-       {!gateway&&<p className="rounded-xl border border-[#ead7b1] bg-[#fff7e8] p-4 text-sm text-[#78572b]">The public chat is being built and is not accepting visitors yet.</p>}
+       {!gateway&&<p className="rounded-xl border border-[#ead7b1] bg-[#fff7e8] p-4 text-sm text-[#78572b]">Public matching is not open yet. <Link href="/chat-preview" className="font-semibold underline">Try the interactive chat demo with Introvert Mode</Link> instead.</p>}
        <button type="submit" disabled={!gateway||!adult||!rules||busy} className="btn w-full rounded-xl py-4 text-lg">{busy?'Connecting…':'Start an anonymous chat'}</button>
      </form>
    </section>}

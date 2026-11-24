@@ -11,7 +11,7 @@ export default function Layout({children}:{children:React.ReactNode}){
    <nav aria-label="Main navigation" className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-5">
     <Link href="/" className="text-xl font-black tracking-tight text-[#174a34]">♡ Lonely No Longer</Link>
     <div className="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm font-semibold">
-     <Link href="/chat" className="hover:underline">Chat preview</Link>
+     <Link href="/chat-preview" className="hover:underline">Chat preview</Link>
      <Link href="/safety" className="hover:underline">Stay safe</Link>
      <Link href="/rules" className="hover:underline">Rules</Link>
      <Link href="/privacy" className="hover:underline">Privacy</Link>

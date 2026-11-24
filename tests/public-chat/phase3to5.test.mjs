@@ -42,7 +42,7 @@ test('support and accessibility pages exist with clear guidance',()=>{
 });
 test('homepage has a working preview link and is not pretending to be live',()=>{
  const home=read('apps/web/app/page.tsx');
- assert.match(home,/href="\/chat"/);
+ assert.match(home,/href="\/chat-preview"/);
  assert.match(home,/not accepting visitors/);
 });
 test('chat report flow puts keyboard focus on report heading',()=>{
