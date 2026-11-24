@@ -9,10 +9,10 @@ export default function Home(){
    <h2 className="mt-4 font-serif text-2xl font-bold text-[#153f30]">Come and see what we're building ☕</h2>
    <p className="mt-3 max-w-2xl text-[#52675a]">Our anonymous, text-only one-to-one chat is being prepared for adults. We’re working on moderation, privacy and testing before opening to visitors.</p>
    <div className="mt-6 flex flex-wrap items-center gap-4">
-    <Link href="/chat" className="btn rounded-xl">See the chat preview</Link>
+    <Link href="/chat-preview" className="btn rounded-xl">See the chat preview</Link>
     <Link href="/safety" className="btn-secondary rounded-xl">How to stay safe</Link>
    </div>
-   <p className="mt-4 text-sm text-[#52675a]">The preview asks for an 18+ self-declaration, not independent age verification. It will not connect you to other visitors yet.</p>
+   <p className="mt-4 text-sm text-[#52675a]">Try the interactive demo with a fictional chat partner and optional Introvert Mode. Real matching is not open yet; the demo never sends or saves messages.</p>
   </section>
   <section aria-labelledby="how-it-works" className="mt-12">
    <h2 id="how-it-works" className="font-serif text-3xl font-bold text-[#153f30]">Good company. Simple steps.</h2>
